@@ -10,17 +10,14 @@ Use Step:
 
 (3) "kernel/drivers/iio/adc/Kconfig" add :
 
-"config TI_ADS131M04
-
-	tristate "Ti ADS131M04 SPI ADC driver"
-	
-	depends on SPI_MASTER
-	
-	default y
-	
-	help
-	
-	  Ti ADS131M04 SPI ADC driver"
+"
+	config TI_ADS131M04
+		tristate "Ti ADS131M04 SPI ADC driver"
+		depends on SPI_MASTER
+		default y
+		help
+		  Ti ADS131M04 SPI ADC driver
+"
 
 	  
 (4) kernel do "make menuconfig"
